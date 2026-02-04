@@ -1,0 +1,12 @@
+<h2>{{ status }} Test Cases</h2>
+{% if test_cases %}
+    <ul>
+    {% for case in test_cases %}
+        <li><strong>{{ case.classname }}</strong> → {{ case.name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No {{ status }} test cases found.</p>
+{% endif %}
+
+<a href="{{ url_for('results') }}"><button>⬅ Back to Summary</button></a>
