@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+.env/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Reports / test artifacts
+final_report.xml
+rerun_output.xml
+uploaded_reports/
+TestsCasesFiles/
+
+# Nested or local projects
+Projects/
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
